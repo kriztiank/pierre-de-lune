@@ -1,0 +1,24 @@
+footer {
+  text-align: center;
+  background: var(--bg-color-bluegray);
+  color: var(--text-color-grey);
+  height: 120px;
+  padding: 1rem;
+}
+
+.footer-icons {
+  padding: 1rem;
+}
+
+.footer-icons .icons {
+  margin-right: 0.8rem;
+}
+
+a {
+  color: var(--text-color-grey);
+}
+
+a:hover {
+    color: var(--text-color-grey-hover);
+  
+}

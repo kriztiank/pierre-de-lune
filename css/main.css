@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import '_imports/buttons.css';
+@import '_imports/footer.css';
+@import '_imports/forms.css';
+@import '_imports/nav.css';
+@import '_imports/slider.css';
+@import '_imports/variables.css';
+
+/* Extra small devices (portrait phones, less than 600px) */
+
+/*******************************
+ base styles
+*******************************/
+.index-body {
+  background: var(--bg-color-white);
+  font-family: var(--primary-font);
+}
+
+.product-body {
+  background: var(--bg-color-white);
+  font-family: var(--primary-font);
+}
+
+.contact-body {
+  background: var(--bg-color-white);
+  font-family: var(--primary-font);
+}
+
+/* headlines h1 / Page title headlines */
+h1 {
+  color: var(--accent-color-orange);
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-size: 40px;
+}
+
+/* headlines h2 */
+h2 {
+  color: var(--accent-color-orange);
+  padding-bottom: 0.5rem;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+/* headlines h4 */
+h4 {
+  font-size: 16px;
+  color: var(--accent-color-brown);
+}
+
+p {
+  font-size: 14px;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* bold text */
+.bold {
+  font-weight: bold;
+}
+
+/* button placement */
+.button {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+img {
+  line-height: 0;
+}
+
+/* Produktinformation formatting */
+ul li {
+  line-height: 1.5rem;
+}
+/*******************************
+ nav-mobile_import
+*******************************/
+.nav-mobile {
+  font-family: var(--primary-font);
+  text-align: right;
+  padding: 1rem;
+  background: var(--bg-color-bluegray-opacity);
+  color: var(--text-color-white);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+/*******************************
+index-header
+*******************************/
+.index-header {
+  background: url('../images/toploader1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+/*******************************
+ index-main
+*******************************/
+.index-main {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.index-main-inner-wrap {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 40px;
+}
+
+.index-product-image {
+  width: 50%;
+}
+/*******************************
+ index-grid-area
+*******************************/
+.index-grid-area {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    'header'
+    'sect1'
+    'sect2'
+    'sect3';
+}
+
+.grid-area-image {
+  width: 100%;
+  display: block;
+}
+
+header {
+  grid-area: header;
+}
+
+section:nth-of-type(1) {
+  grid-area: sect1;
+}
+
+section:nth-of-type(2) {
+  grid-area: sect2;
+}
+
+section:nth-of-type(3) {
+  grid-area: sect3;
+}
+
+section:nth-of-type(4) {
+  grid-area: sect4;
+}
+
+section:nth-of-type(5) {
+  grid-area: sect5;
+}
+
+@media only screen and (min-width: 600px) {
+  .index-grid-area {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      'header header header'
+      'sect1  sect2  sect3'
+      'sect4  sect5  sect5';
+  }
+}
+/*******************************
+ product-header
+*******************************/
+.product-header h1 {
+  text-align: center;
+}
+/*******************************
+ produkt.html
+*******************************/
+.product-wrap {
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 120px;
+  min-height: calc(100vh - 120px);
+}
+
+.product-image {
+  width: 75%;
+  padding: 45px;
+}
+
+.video {
+  margin: 0 auto;
+  width: 75%;
+  height: auto;
+}
+
+.product-columns {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  margin: 0 20px;
+  text-align: center;
+}
+/*******************************
+ contact-header
+*******************************/
+.contact-header h1 {
+  text-align: center;
+}
+/*******************************
+ contact.html
+*******************************/
+.contact-wrap {
+  max-width: 1000px;
+  margin: auto;
+  min-height: calc(100vh - 120px);
+
+}
+
+.contact-columns {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.contact-image {
+  width: 75%;
+}

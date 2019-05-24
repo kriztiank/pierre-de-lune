@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+
+:root {
+  /* COLORS */
+
+  /* text, buttons, borders, forms. etc.*/
+
+  --accent-color-yellow: rgb(255, 185, 20);
+  --accent-color-yellow-hover: rgba(255, 185, 20, 0.8);
+
+  --accent-color-brown: rgb(147, 107, 12);
+  --accent-color-brown-hover: rgba(147, 107, 12, 0.8);
+
+  --text-color-white: rgb(255, 255, 255);
+  --text-color-white-hover: rgba(255, 255, 255, 0.8);
+
+  --text-color-grey: rgba(255,255,255, 0.6);
+  --text-color-grey-hover: rgba(255,255,255, 0.8);
+
+  --accent-color-lightblue: rgb(149, 189, 209);
+  --accent-color-darkblue: rgb(27, 117, 188);
+  --accent-color-orange: rgb(225, 77, 38);
+
+  /* BACKGROUNDS */
+
+  --bg-color-black: rgb(0, 0, 0);
+  --bg-color-white: rgb(255, 255, 255);
+  --bg-color-white-darken: hsl(0, 0%, 90%);
+  --bg-color-bluegray: rgb(52, 58, 67);
+  --bg-color-bluegray-opacity: rgba(52, 58, 67, 0.9);
+
+  /* TYPOGRAPHY */
+
+  --primary-font: 'Mukta', sans-serif;
+  --secondary-font: 'Lato', sans-serif;
+
+  /* ANIMATION */
+  /* all = all parameters */
+  --ease-in: all 0.5s ease-in;
+}

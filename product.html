@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pierre De Lune</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon3/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon3/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon3/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon3/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+    integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous">
+  </script>
+  <!-- Extra small devices (portrait phones, less than 600px) -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Small devices (landscape phones, 600px and up) -->
+  <link rel="stylesheet" media="screen and (min-width: 600px)" href="css/smallscreen.css">
+  <!-- Large devices (desktops, 900px and up) -->
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="css/widescreen.css">
+</head>
+
+<body class="product-body">
+  <!-- navigation-mobile-->
+  <nav class="nav-mobile">
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <!-- <a href="index.html" onclick="closeNav()"><img src="images/logo_white_small.png" alt="Pierre De Lune Logo"></a> -->
+        <a href="index.html" onclick="closeNav()">Pierre de Lune</a>
+        <a href="product.html" onclick="closeNav()">Produkter</a>
+        <a href="contact.html" onclick="closeNav()">Kontakt</a>
+      </div>
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </nav>
+
+  <!-- header-->
+  <section class="product-wrap">
+    <header class="product-header">
+      <h1>Elefant Vægur</h1>
+    </header>
+    <section class="product-columns">
+
+      <!--SLIDESHOW HTML START-->
+      <article>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img class="border-light-grey product-image" src="images/slide1.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img class="border-light-grey product-image" src="images/slide2.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img class="border-light-grey product-image" src="images/slide3.jpg" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </article>
+      <!--SLIDESHOW HTML END-->
+
+      <article>
+        <h2>Elefant Vægur</h2>
+        <h3 class="bold">Elefant ur - Brun Træ</h3>
+        <h3>299 DKK</h3>
+
+        <div class="button">
+          <a href="#" class="btn btn-blue">TILFØJ TIL KURV</a>
+        </div>
+
+        <h3 class="bold">Produktinformation:</h3>
+        <ul>
+          <li>Børne ur</li>
+          <li>Brun</li>
+          <li>Batterier</li>
+          <li class="bold">Dimensioner:</li>
+          <li>B:24 H:19 D:4 cm</li>
+        </ul>
+        <br />
+        <h3 class="bold">Materialer:</h3>
+        <ul>
+          <li>Træ</li>
+          <li>Plastik</li>
+        </ul>
+      </article>
+
+      <article>
+        <video class="video" controls preload="auto">
+          <source src="media/video_teaser.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </article>
+
+      <article>
+        <video class="video" controls preload="auto">
+          <source src="media/video_teaser.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </article>
+
+    </section>
+  </section>
+
+  <!-- footer-->
+  <footer>
+    <div class="footer-icons">
+      <a href="#!"><i class="icons fab fa-facebook-f"></i></a>
+      <a href="#!"><i class="icons fab fa-twitter"></i></a>
+      <a href="#!"><i class="icons fab fa-instagram"></i></a>
+      <a href="#!"><i class="icons fab fa-youtube"></i></a>
+    </div>
+    <div>&copy; 2019 pierredelune@shop.dk</div>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="js/mobile.js"></script>
+  <script src="js/slideshow.js"></script>
+
+</body>
+
+</html>

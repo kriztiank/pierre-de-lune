@@ -1,0 +1,66 @@
+@media (min-width: 900px) {
+  /* Large devices (desktops, 900px and up) */
+
+  /*******************************
+ SHARED
+*******************************/
+  .product-columns,
+  .contact-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+    text-align: left;
+  }
+
+  .product-image,
+  .contact-image,
+  .video {
+    width: 100%;
+  }
+  /*******************************
+ base styles
+*******************************/
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+  /*******************************
+ index-header
+*******************************/
+  .index-header {
+    height: 100vh;
+  }
+  /*******************************
+ index-main
+*******************************/
+  .index-main {
+    height: 100vh;
+  }
+  /*******************************
+ index-grid-area
+*******************************/
+  .index-grid-area {
+    margin-top: 75px;
+    margin-bottom: 20px;
+  }
+
+  /*******************************
+ header-product.html
+*******************************/
+  .product-header h1 {
+    visibility: hidden;
+  }
+  /*******************************
+ header-contact.html
+*******************************/
+  .contact-header h1 {
+    visibility: hidden;
+  }
+  .contact-wrap {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pierre De Lune</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon3/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon3/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon3/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon3/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+    integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous">
+  </script>
+  <!-- Extra small devices (portrait phones, less than 600px) -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Small devices (landscape phones, 600px and up) -->
+  <link rel="stylesheet" media="screen and (min-width: 600px)" href="css/smallscreen.css">
+  <!-- Large devices (desktops, 900px and up) -->
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="css/widescreen.css">
+</head>
+
+<body class="contact-body">
+  <!-- navigation-mobile-->
+  <nav class="nav-mobile">
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <!-- <a href="index.html" onclick="closeNav()"><img src="images/logo_white_small.png" alt="Pierre De Lune Logo"></a> -->
+        <a href="index.html" onclick="closeNav()">Pierre de Lune</a>
+        <a href="product.html" onclick="closeNav()">Produkter</a>
+        <a href="contact.html" onclick="closeNav()">Kontakt</a>
+      </div>
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </nav>
+
+  <!-- header-->
+  <section class="contact-wrap">
+    <header class="contact-header">
+      <h1>Kontakt os</h1>
+    </header>
+    <section class="contact-columns">
+      <article>
+        <img class="contact-image" src="images/img_contact.jpg" alt="Pierre De Lune produkter" />
+      </article>
+      <article>
+        <h2>Kontakt os</h2>
+        <form>
+          <div>
+            <input type="text" id="name" name="user_name" placeholder="Navn:">
+          </div>
+          <div>
+            <input type="email" id="mail" name="user_mail" placeholder="E-mail:">
+          </div>
+          <div>
+            <textarea id="msg" name="user_message" placeholder="Besked:" style="resize: none;"></textarea>
+          </div>
+          <div class="button">
+            <a href="#" class="btn btn-blue">SEND BESKED</a>
+          </div>
+        </form>
+      </article>
+    </section>
+  </section>
+
+  <!-- footer-->
+  <footer>
+    <div class="footer-icons">
+      <a href="#!"><i class="icons fab fa-facebook-f"></i></a>
+      <a href="#!"><i class="icons fab fa-twitter"></i></a>
+      <a href="#!"><i class="icons fab fa-instagram"></i></a>
+      <a href="#!"><i class="icons fab fa-youtube"></i></a>
+    </div>
+    <div>&copy; 2019 pierredelune@shop.dk</div>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="js/mobile.js"></script>
+
+</body>
+
+</html>

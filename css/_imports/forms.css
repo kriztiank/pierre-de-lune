@@ -1,0 +1,30 @@
+form div+div {
+  margin-top: 1em;
+}
+
+input,
+textarea {
+  /* Samme font og størrelse i text-area. */
+  font: 1em sans-serif;
+  padding: 0;
+
+  /* Størrelse på text-area. */
+  width: 100%;
+  box-sizing: border-box;
+
+  /* Text field border */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* highligt */
+  background: rgba(149, 189, 209, 0.2);
+}
+
+textarea {
+  /* Multiline text */
+  vertical-align: top;
+  /* Plads til tekst */
+  height: 5em;
+}
