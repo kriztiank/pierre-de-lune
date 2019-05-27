@@ -10,9 +10,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon3/favicon-16x16.png">
   <link rel="manifest" href="images/favicon3/site.webmanifest">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
-    integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous">
   </script>
+
   <!-- Extra small devices (portrait phones, less than 600px) -->
   <link rel="stylesheet" href="css/main.css">
   <!-- Small devices (landscape phones, 600px and up) -->
@@ -56,16 +56,16 @@
         <h2>Kontakt os</h2>
         <form>
           <div>
-            <input type="text" id="name" name="user_name" placeholder="Navn:">
+            <input id="name_id" placeholder="Navn:" onkeypress="return isLetterKey(event)">
           </div>
           <div>
-            <input type="email" id="mail" name="user_mail" placeholder="E-mail:">
+            <input id="email_id" placeholder="Email:"></input>
           </div>
           <div>
-            <textarea id="msg" name="user_message" placeholder="Besked:" style="resize: none;"></textarea>
+            <textarea id="comment_id" placeholder="Besked:" style="resize: none;"></textarea>
           </div>
           <div class="button">
-            <a href="#" class="btn btn-blue">SEND BESKED</a>
+            <button type="button" onclick="validate()" class="btn btn-blue">SEND BESKED</button>
           </div>
         </form>
       </article>
@@ -85,6 +85,7 @@
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="js/mobile.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
